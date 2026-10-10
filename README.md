@@ -87,3 +87,4 @@ lib/motion.ts      small animation helpers
   the first tap turns the voice on.
 - **Accessibility:** everything respects `prefers-reduced-motion` (animations switch off).
 - **Mobile:** under 900px the project accordion becomes a normal list; the background camera moves less.
+deploy
