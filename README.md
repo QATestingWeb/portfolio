@@ -3,6 +3,8 @@
 Cinematic, scroll-driven portfolio built with **Next.js 15 (App Router)**, **React 19** and **TypeScript**.
 No UI libraries — all animation is plain CSS + `requestAnimationFrame`, so it stays fast.
 
+**Live:** https://mughees-khan.vercel.app/
+
 ## Run it
 
 ```bash
@@ -24,7 +26,7 @@ Requires **Node.js 18.18+** (Node 20 or 22 recommended).
 1. Push this folder to a GitHub repository.
 2. Go to **vercel.com → Add New → Project**, import the repo, keep the defaults, click **Deploy**.
 3. Add your own domain under **Project → Settings → Domains**.
-4. Under **Settings → Environment Variables**, set `NEXT_PUBLIC_SITE_URL` to your live URL (for example `https://mugheeskhan.dev`) so link previews on WhatsApp/LinkedIn show your image.
+4. Link previews on WhatsApp/LinkedIn use `profile.url` in `data/site.ts` (currently `https://mughees-khan.vercel.app`). If you move to another domain, update it there, or set `NEXT_PUBLIC_SITE_URL` under **Settings → Environment Variables** to override it.
 
 ## Edit your content
 
@@ -32,7 +34,7 @@ Almost everything is in **`data/site.ts`**:
 
 | What | Where |
 |---|---|
-| Name, email, WhatsApp, GitHub, LinkedIn, CV path | `profile` |
+| Name, site URL, email, WhatsApp, GitHub, LinkedIn, CV path | `profile` |
 | Projects (text, links, screenshots, colors) | `projects` |
 | Jobs, education, certifications | `experience`, `education`, `certifications` |
 | Skills + filter groups | `skills`, `skillFamilies` |

@@ -7,6 +7,7 @@ export const profile = {
   role: "Software Engineer",
   title: "Frontend Developer",
   company: "Crown Group",
+  url: "https://mughees-khan.vercel.app",
   email: "mugheesk180@gmail.com",
   whatsapp: "923267086081",
   whatsappLabel: "+92 326 7086081",
