@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? profile.url),
   title: "Mughees Khan — Software Engineer",
   description:
-    "Frontend developer building fast, modern websites and mobile apps with React, Next.js, React Native and WordPress.",
+    "Software engineer specializing in frontend. Building websites, mobile apps and full products with React, Next.js and React Native, plus APIs, backend and AI features.",
   openGraph: {
     title: "Mughees Khan — Software Engineer",
-    description: "Websites and mobile apps with React, Next.js and React Native.",
+    description: "Software engineer specializing in frontend: web, mobile, backend and AI.",
     images: ["/images/intro-poster.jpg"],
     type: "website",
   },

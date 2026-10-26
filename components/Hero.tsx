@@ -216,12 +216,12 @@ export default function Hero() {
           </button>
         </div>
         <div className="hero-side hide-sm" ref={sideRef}>
-          Building websites and mobile apps with React, Next.js, React Native and WordPress.
+          Building websites, mobile apps and the APIs, backend and AI features behind them.
         </div>
 
         <div className="hero-line left" ref={line1Ref}>
           <h2>
-            I build fast, modern <span className="serif">websites and mobile apps.</span>
+            Frontend specialist, <span className="serif">full-stack mindset.</span>
           </h2>
         </div>
         <div className="hero-line right" ref={line2Ref}>

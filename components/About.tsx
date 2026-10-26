@@ -23,9 +23,10 @@ export default function About() {
           Hi, I&apos;m <span className="serif">{profile.firstName}.</span>
         </h2>
         <p>
-          Frontend developer with <strong>3 years of experience</strong> building fast, responsive web and mobile apps with React,
-          Next.js and React Native. I&apos;ve shipped production websites for Crown Group&apos;s brands and cross-platform apps live on
-          Google Play and the App Store, with a focus on clean interfaces, map and API integrations, and maintainable code.
+          Software engineer with <strong>3+ years of experience</strong>, specializing in frontend. I build fast, responsive web and
+          mobile apps with React, Next.js and React Native, and I&apos;ve shipped production websites for Crown Group&apos;s brands and
+          cross-platform apps live on Google Play and the App Store. Frontend is my specialty, but I don&apos;t stop at the UI: I work
+          across the stack on APIs, backend, cloud and AI features, and pick up whatever a product needs to ship.
         </p>
         <div className="stats">
           {stats.map((s) => (
@@ -67,17 +68,17 @@ export default function About() {
             <div>
               <div className="badge-name">{profile.name.toUpperCase()}</div>
               <div className="badge-sub">
-                {profile.title} · {profile.company}
+                {profile.role} · {profile.company}
               </div>
             </div>
             <dl className="badge-meta">
               <div>
                 <dt>EXPERIENCE</dt>
-                <dd>3 years</dd>
+                <dd>3+ years</dd>
               </div>
               <div>
-                <dt>STACK</dt>
-                <dd>React · Next · RN</dd>
+                <dt>SPECIALTY</dt>
+                <dd>{profile.specialty}</dd>
               </div>
             </dl>
             <div className="barcode" aria-hidden="true" />
