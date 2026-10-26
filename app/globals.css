@@ -1222,6 +1222,31 @@ video {
   font-weight: 400;
 }
 
+.acc-status {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--c);
+  background: var(--glow);
+  color: var(--c);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.acc-status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--c);
+  animation: twinkle 0.9s ease-in-out infinite alternate;
+}
+
 .acc-title {
   margin: 0;
   font-weight: 700;
@@ -1948,7 +1973,8 @@ video {
   .badge-swing,
   .wa-ring,
   .scroll-hint span,
-  .pulse-dot {
+  .pulse-dot,
+  .acc-status::before {
     animation: none;
   }
   .reveal,

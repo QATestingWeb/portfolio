@@ -29,15 +29,32 @@ export type Project = {
   points: string[];
   tags: string[];
   image: string;
+  /** Shown as a badge, e.g. "In progress" for unfinished work */
+  status?: string;
   /** Website projects */
   website?: string;
   domain?: string;
+  /** Button text for the website link (defaults to "Visit website") */
+  websiteLabel?: string;
   /** App projects */
   playStore?: string;
   appStore?: string;
 };
 
 export const projects: Project[] = [
+  {
+    title: "Kinder Pilot",
+    category: "DAYCARE ERP · NEXT.JS",
+    color: "#FF6A3D",
+    status: "In progress",
+    website: "https://daycare-erp-inky.vercel.app/dashboard",
+    domain: "daycare-erp-inky.vercel.app",
+    websiteLabel: "Live demo",
+    image: "/images/projects/kinder-pilot.webp",
+    description: "Multi-branch ERP that runs daycares and schools, from admissions to fees, payroll and head-office approvals.",
+    points: ["Admissions pipeline, enrollment wizard and student records", "Attendance, staff-to-child ratios, incidents and health logs", "Billing, payroll, HR, stock and procurement"],
+    tags: ["Next.js", "React", "Recharts"],
+  },
   {
     title: "Crown Electric Mobility",
     category: "WEBSITE · NEXT.JS",

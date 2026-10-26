@@ -128,6 +128,7 @@ export default function Projects() {
                   <div className="acc-info">
                     <div className="acc-cat">
                       <b>{pad(i + 1)}</b> &nbsp;/&nbsp; {p.category}
+                      {p.status && <span className="acc-status">{p.status}</span>}
                     </div>
                     <h3 className="acc-title">{p.title}</h3>
                     <p className="acc-desc">{p.description}</p>
@@ -144,7 +145,7 @@ export default function Projects() {
                     <div className="acc-actions">
                       {p.website && (
                         <a href={p.website} target="_blank" rel="noopener noreferrer" className="btn btn-light btn-sm" tabIndex={open ? 0 : -1}>
-                          Visit website <ArrowUpRightIcon />
+                          {p.websiteLabel ?? "Visit website"} <ArrowUpRightIcon />
                         </a>
                       )}
                       {p.appStore && (
